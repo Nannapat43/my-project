@@ -152,7 +152,7 @@ export default {
       }
     },
     signup() {
-      // Navigate to sign-up page or handle sign-up logic here
+
     },
   },
 };
