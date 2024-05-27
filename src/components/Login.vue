@@ -134,7 +134,7 @@ export default {
       if (this.$refs.form.validate()) {
         this.loading = true;
         try {
-          const response = await axios.post("http://localhost:3000/api/auth", {
+          const response = await axios.post("http://localhost:3000/api/login", {
             emailOrPhone: this.emailOrPhone,
             password: this.password,
           });
