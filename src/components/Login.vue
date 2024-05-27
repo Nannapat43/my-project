@@ -144,16 +144,14 @@ export default {
           if (error.response) {
             alert(error.response.data.message);
           } else {
-            alert("An error occurred. Please try again.");
+            alert("Try again.");
           }
         } finally {
           this.loading = false;
         }
       }
     },
-    signup() {
-
-    },
+    signup() {},
   },
 };
 </script>
@@ -175,14 +173,6 @@ export default {
   z-index: 2;
 }
 
-.background-blur {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(8px);
-  z-index: -2;
-}
-
 .card-background {
   min-height: 707px;
   padding: 48px 16px;
@@ -191,13 +181,5 @@ export default {
   box-sizing: border-box;
   flex-direction: column;
   margin: 0;
-}
-
-.input-border {
-  background-color: light-dark(
-    rgb(232, 240, 254),
-    rgba(70, 90, 126, 0.4)
-  ) !important;
-  color: fieldtext !important;
 }
 </style>
